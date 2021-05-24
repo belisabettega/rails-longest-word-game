@@ -1,0 +1,10 @@
+<h1>Games#score</h1>
+<%if @english_word && @valid_word%>
+  <h2>Congratulations! <%=@word%> is a valid English Word! </h2>
+  <h2>Your score was: <%= @word.size %> points</h2>
+<%elsif @english_word == false %>
+  <h2>Sorry but <%=@word.upcase!%> does not seem like a English Word...</h2>
+<%else %>
+  <h2>Sorry but <%=@word.upcase!%> can't be built out of <%=@letters%></h2>
+<%end%>
+<%= link_to "Play again", "/new"%>
