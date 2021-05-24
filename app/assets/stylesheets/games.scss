@@ -2,8 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .letter {
-    background-color: #3498DC;
+    background-color: #C9AF98;
     width: 70px;
     font-size: 13px;
     font-weight: bold;
@@ -35,4 +40,34 @@ label {
 input {
     margin: 10px 0;
     padding: 15px;
+}
+
+.banner {
+    background: url("https://images.pexels.com/photos/278887/pexels-photo-278887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    background-color: #C9AF98;
+    padding: 70px 40px;
+    transform: rotate(45deg);
+    border-radius: 30px;
+}
+
+.brown {
+    background-color: #000;
+    padding: 70px 40px;
+    transform: rotate(-45deg);
+    border-radius: 50%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 35px;
 }
